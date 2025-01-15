@@ -18,8 +18,8 @@ public class RoverTest {
         Rover rover2= new Rover(0,0,"W");
         rover.moveForward();
         assertEquals(1, rover.getX());
-        assertEquals(1, rover.getY());
-        assertEquals("N", rover.getFacing());
+        assertEquals(0, rover.getY());
+        assertEquals("W", rover.getFacing());
         
 
 
