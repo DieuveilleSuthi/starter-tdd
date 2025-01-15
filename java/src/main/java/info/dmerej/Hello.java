@@ -32,10 +32,10 @@ class Rover {
         if (direction.equals("N")) {
             y += 1;
         }
-         if (direction.equals("O")) {
+         if (direction.equals("W")) {
             X += -1;
         }
-         if (direction.equals("W")) {
+         if (direction.equals("E")) {
             X += 1;
         }
          if (direction.equals("S")) {
