@@ -15,13 +15,17 @@ public class RoverTest {
         assertEquals(1, rover.getY());
         assertEquals("N", rover.getFacing());
 
+        
+        
+
+
+    }
+    @Test
+    void testMoveForwardFacingWest(){
         Rover rover2= new Rover(0,0,"W");
         rover.moveForward();
         assertEquals(1, rover.getX());
         assertEquals(0, rover.getY());
         assertEquals("W", rover.getFacing());
-        
-
-
-    }
+}
 }
