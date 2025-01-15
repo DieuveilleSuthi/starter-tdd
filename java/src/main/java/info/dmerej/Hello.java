@@ -44,5 +44,22 @@ class Rover {
             break;
         }
     }
+
+    public void moveBack() {
+        switch (direction){
+            case"S":
+            y +=1;
+            break;
+            case"N":
+            y -=1;
+            break;
+            case"W":
+            x +=1;
+            break;
+            case"E":
+            x -=1;
+            break;
+        }
+    }
 }
 

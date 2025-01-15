@@ -6,16 +6,47 @@ Given A rover with position (x=0, y=0) facing North
 When rover goes forward
 Then The Rover position is (x=0, y=1) facing North
 
+Scenario: Moving forward when facing Est
+
 Given A rover with position (x=0, y=0) facing Est
 When rover goes forward
 Then The Rover position is (x=1, y=0) facing Est
 
+Scenario: Moving forward when facing West
 
 Given A rover with position (x=, y=0) facing West
 When rover goes forward
 Then The Rover position is (x=-1, y=0) facing West
 
+Scenario: Moving forward when facing Sud
+
+Given A rover with position (x=0, y=0) facing Sud
+When rover goes forward
+Then The Rover position is (x=0, y=-1) facing Sud
+
+
+Feature: Moving forward
+
+Scenario: Moving backward when facing North
 
 Given A rover with position (x=0, y=0) facing North
-When rover goes forward
-Then The Rover position is (x=0, y=-1) facing North
+When rover goes backward
+Then The Rover position is (x=0, y=1) facing North
+
+Scenario: Moving backward when facing Est
+
+Given A rover with position (x=0, y=0) facing Est
+When rover goes backward
+Then The Rover position is (x=1, y=0) facing Est
+
+Scenario: Moving backward when facing West
+
+Given A rover with position (x=, y=0) facing West
+When rover goes backward
+Then The Rover position is (x=-1, y=0) facing West
+
+Scenario: Moving backward when facing Sud
+
+Given A rover with position (x=0, y=0) facing Sud
+When rover goes backward
+Then The Rover position is (x=0, y=-1) facing Sud
