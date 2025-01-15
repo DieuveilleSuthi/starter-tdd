@@ -29,17 +29,19 @@ class Rover {
     }
 
     public void moveForward() {
-        if (direction.equals("N")) {
-            y += 1;
-        }
-         if (direction.equals("W")) {
-            X += -1;
-        }
-         if (direction.equals("E")) {
-            X += 1;
-        }
-         if (direction.equals("S")) {
-            y += -1;
+        switch (direction){
+            case"N":
+            y +=1;
+            break;
+            case"S":
+            y -=1;
+            break;
+            case"E":
+            x +=1;
+            break;
+            case"W":
+            x -=1;
+            break;
         }
     }
 }
